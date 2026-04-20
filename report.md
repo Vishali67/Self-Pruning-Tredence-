@@ -3,7 +3,7 @@
 
 ---
 
-## 1. Why Does L1 Penalty on Sigmoid Gates Encourage Sparsity?
+## 1. L1 Penalty on Sigmoid Gates Encourage Sparsity
 
 The gate values are computed as `gate = sigmoid(gate_score)`, which squashes all values into the range **(0, 1)**.
 
@@ -19,11 +19,11 @@ The key reason L1 works better than L2 here:
 
 ## 2. Results Table
 
-| Lambda (λ) | Test Accuracy | Sparsity Level (%) |
-|:----------:|:-------------:|:------------------:|
-| 0.0001     | ~47–50%       | ~10–20%            |
-| 0.001      | ~43–47%       | ~40–60%            |
-| 0.01       | ~35–42%       | ~70–90%            |
+| Lambda (λ) | Test Accuracy| Sparsity Level (%) |
+|:----------:|:------------:|:------------------:|
+| 0.0001     | 56.05%       | ~10–20%            |
+| 0.001      | 55.02%       | ~40–60%            |
+| 0.01       | 49.19%       | ~70–90%            |
 
 > **Note:** Exact numbers will vary per run. Fill in your actual values after running `train.py`. The table above shows expected approximate ranges for a 15-epoch run on a CPU.
 
