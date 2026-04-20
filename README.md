@@ -2,8 +2,6 @@
 
 A neural network that learns to **prune itself during training** using learnable gate parameters. Built on CIFAR-10 image classification with PyTorch.
 
-## What This Does
-
 Instead of pruning weights *after* training, this network associates each weight with a learnable "gate" (via sigmoid). An L1 sparsity penalty pushes gates toward 0 during training, effectively removing unimportant connections on the fly.
 
 ## Project Structure
